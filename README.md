@@ -26,7 +26,7 @@ ln -s "$(pwd)/optimize-headline" /path/to/your/project/.claude/skills/optimize-h
 
 ```
 /optimize-headline           # generate 3 ranked headline alternatives
-/optimize-headline --help    # prints the argument summary, takes no other action
+/optimize-headline --help    # reads and displays help.md verbatim, takes no other action
 ```
 
 See `SKILL.md` for the full pattern library and redline rules.

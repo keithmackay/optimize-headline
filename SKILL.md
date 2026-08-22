@@ -10,15 +10,16 @@ Generates and evaluates headline alternatives for any piece of published content
 ## Arguments
 
 - `/optimize-headline` (no args) - Read the target content (or the draft title provided), apply the redline rules, and produce 3 ranked alternatives
-- `/optimize-headline --help` - Prints this skill's summary and argument list, without generating anything
+- `/optimize-headline --help` - Do not run any other part of this skill. Read and display the contents of `help.md` (in this skill's folder) verbatim, then stop.
 
 ## Workflow
 
-1. **Read the content** (or the topic/argument, if the body isn't written yet) to understand the actual stakes, audience, and specificity available.
-2. **Draft or take the current title** as the baseline.
-3. **Apply the Headline Redline Rules** below.
-4. **Generate 3 alternatives**, each drawing from a different pattern in the Headline Patterns list.
-5. **Output** in the format below, with a recommendation and one-sentence rationale.
+1. **Resolve the target content.** If the user's invocation or the current conversation already names a specific file, draft title, or pasted content, confirm it before proceeding: "Generating headlines for `<path or description>` - confirm?" If no target was specified, ask the user which content (file, draft title, or topic/argument) to work from. Never guess.
+2. **Read the content** (or the topic/argument, if the body isn't written yet) to understand the actual stakes, audience, and specificity available.
+3. **Draft or take the current title** as the baseline.
+4. **Apply the Headline Redline Rules** below.
+5. **Generate 3 alternatives**, each drawing from a different pattern in the Headline Patterns list.
+6. **Output** in the format below, with a recommendation and one-sentence rationale.
 
 ## Headline Patterns (ranked by engagement pull)
 
